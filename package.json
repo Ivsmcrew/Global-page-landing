@@ -1,0 +1,23 @@
+{
+  "name": "global-page-landing",
+  "version": "1.0.0",
+  "description": "Short landing page with animation",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-run": "sass --watch assets/sass/style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivsmcrew/Global-page-landing.git"
+  },
+  "author": "https://github.com/Ivsmcrew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivsmcrew/Global-page-landing/issues"
+  },
+  "homepage": "https://github.com/Ivsmcrew/Global-page-landing#readme",
+  "dependencies": {
+    "sass": "^1.64.2"
+  }
+}
