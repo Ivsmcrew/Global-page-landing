@@ -113,5 +113,16 @@ legend {
   font-weight: 700;
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  font: 400 normal 1.6rem "Poppins", sans-serif;
+  margin: 0 auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
 
 /*# sourceMappingURL=style.css.map */

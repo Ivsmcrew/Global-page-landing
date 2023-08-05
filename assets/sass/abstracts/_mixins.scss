@@ -1,0 +1,13 @@
+//fonts
+@mixin fontPoppinsRegular($fz: 1.6rem) {
+    font: 400 normal $fz "Poppins", sans-serif;
+}
+@mixin fontPoppinsMedium {
+    font: 500 normal $fz "Poppins", sans-serif; 
+}
+@mixin fontPoppinsBold {
+    font: 700 normal $fz "Poppins", sans-serif; 
+}
+@mixin fontRobotoRegular {
+    font: 400 normal $fz "Roboto", sans-serif; 
+}

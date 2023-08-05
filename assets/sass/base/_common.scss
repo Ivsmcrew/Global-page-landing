@@ -1,0 +1,10 @@
+html{
+    scroll-behavior: smooth;  
+    font-size: $base-font-size;
+}
+body{
+    @include fontPoppinsRegular;
+	margin: 0 auto;
+	overflow-x: hidden;
+    scroll-behavior: smooth;  
+}
