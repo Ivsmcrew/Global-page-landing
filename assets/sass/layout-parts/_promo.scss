@@ -1,0 +1,15 @@
+.promo{
+    display: block;
+}
+
+.promo__paragraph{
+    @include fontPoppinsMedium(1.5rem);
+    color: $paragraph-text-color;
+    margin-top: 6px;
+    width: 444px;
+    line-height: 2.6rem;
+}
+
+.promo__button{
+    margin-top: 31px;
+}

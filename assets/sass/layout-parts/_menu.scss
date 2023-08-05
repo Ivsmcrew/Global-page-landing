@@ -1,0 +1,23 @@
+.menu{
+    width: 365px;
+}
+
+.menu__list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__listItem_active{
+    &::after {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 21px;
+        padding-top: 2px;
+        border-bottom: 2px solid $main-color-second;
+    }
+}
+
+.menu__link{
+    color: $menu-text-color;
+}

@@ -2,12 +2,23 @@
 @mixin fontPoppinsRegular($fz: 1.6rem) {
     font: 400 normal $fz "Poppins", sans-serif;
 }
-@mixin fontPoppinsMedium {
+@mixin fontPoppinsMedium($fz: 1.6rem) {
     font: 500 normal $fz "Poppins", sans-serif; 
 }
-@mixin fontPoppinsBold {
+@mixin fontPoppinsBold($fz: 1.6rem) {
     font: 700 normal $fz "Poppins", sans-serif; 
 }
-@mixin fontRobotoRegular {
+@mixin fontRobotoRegular($fz: 1.6rem) {
     font: 400 normal $fz "Roboto", sans-serif; 
 }
+
+//button
+@mixin button($padding-top-bottom: 0.9rem, $padding-left-right: 2.3rem, $fz: 1.6rem) {
+    font-size: $fz;
+    color: $button-text-color;
+    background-color: $main-color-first;
+    padding: $padding-top-bottom $padding-left-right;
+    border-radius: calc( $padding-top-bottom + $fz );
+}
+
+    

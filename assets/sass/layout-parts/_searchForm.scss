@@ -1,0 +1,19 @@
+.searchForm{
+    @include fontRobotoRegular(1.6rem);
+    display: flex;
+    align-items: center;
+    max-width: 597px;
+    height: 62px;
+    background-color: #ffffff;
+    color: $add-text-color;
+    border-radius: 31px;
+    padding: 0 3px 0 42px;
+
+    &__inputField{
+        flex-grow: 1;
+    }
+    &__button{
+        width: 55px;
+        height: 55px;
+    }
+}

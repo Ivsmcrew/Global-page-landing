@@ -1,0 +1,36 @@
+.subscription{
+    display: flex;
+    align-items: center;
+    color: $paragraph-text-color;
+    @include fontRobotoRegular(1.6rem);
+}
+.subscription__users{
+    display: flex;
+}
+
+.subscription__listItem:nth-child(1) {
+    position: relative;
+    z-index: 0;
+}
+.subscription__listItem:nth-child(2) {
+    position: absolute;
+    left:20px;
+    z-index: -1;
+}
+.subscription__listItem:nth-child(3) {
+    position: absolute;
+    left:40px;
+    z-index: -2;
+}
+.subscription__listItem:nth-child(4) {
+    position: absolute;
+    left:60px;
+    z-index: -3;
+}
+
+.subscription__paragraph{
+    margin-left: 75px;
+}
+.subscription__priceLink{
+    margin-left: 5px;
+}

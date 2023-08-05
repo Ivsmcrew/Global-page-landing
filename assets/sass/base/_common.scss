@@ -3,8 +3,31 @@ html{
     font-size: $base-font-size;
 }
 body{
-    @include fontPoppinsRegular;
+    @include fontPoppinsRegular(1.6rem);
+    background-color: $background-color;
 	margin: 0 auto;
 	overflow-x: hidden;
     scroll-behavior: smooth;  
+    // overflow: hidden;
+}
+.wrapper{
+    max-width: 1400px;
+    padding: 0 14.6rem;
+    height: 100vh;
+    margin: 0 auto;
+}
+h1{
+    @include fontPoppinsBold(4.8rem);
+    line-height: 6.5rem;
+    color: $heading-text-color;
+}
+h2{
+    @include fontPoppinsMedium(2.5rem);
+    color: $heading-text-color;
+}
+.span_orange{
+    color: $main-color-second
+}
+.no-display{
+    display: none;
 }

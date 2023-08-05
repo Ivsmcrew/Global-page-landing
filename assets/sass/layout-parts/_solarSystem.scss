@@ -1,0 +1,61 @@
+.solarSystem{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.solarSystem__trajectory{
+    position: absolute;
+    top: -34px;
+    right: -11px;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border: 2px solid #E8E8E8;
+    z-index:-5;
+}
+
+.solarSystem__greenCircle{
+    position: absolute;
+    top: 83px;
+    right: 69px;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: $main-color-first;
+    z-index:-3;
+}
+
+.solarSystem__planet{
+    position: absolute;
+    top: 130px;
+    right: 150px;
+    z-index:-4;
+}
+
+.woman{
+    position: absolute;
+    top: 10px;
+    right: -200px;
+    z-index:-2;
+}
+
+
+
+// .box{
+//     position: relative;
+// }
+
+// .sputnik{
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     offset-path: path('....');
+//     animation: moveBaby 10s linear infinite;
+// }
+
+// @keyframes moveBaby {
+//     100% {
+//         offset-distance: 100%;
+//     }
+// }

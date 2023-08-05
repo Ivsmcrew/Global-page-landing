@@ -120,9 +120,240 @@ html {
 
 body {
   font: 400 normal 1.6rem "Poppins", sans-serif;
+  background-color: #ECF7F3;
   margin: 0 auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+.wrapper {
+  max-width: 1400px;
+  padding: 0 14.6rem;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+h1 {
+  font: 700 normal 4.8rem "Poppins", sans-serif;
+  line-height: 6.5rem;
+  color: #2D2D2D;
+}
+
+h2 {
+  font: 500 normal 2.5rem "Poppins", sans-serif;
+  color: #2D2D2D;
+}
+
+.span_orange {
+  color: #FF8345;
+}
+
+.no-display {
+  display: none;
+}
+
+.button {
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  background-color: #48B774;
+  padding: 0.9rem 2.3rem;
+  border-radius: 2.5rem;
+}
+.button_long {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  background-color: #48B774;
+  padding: 1.2rem 2.2rem;
+  border-radius: 2.7rem;
+}
+.button_circle {
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  background-color: #48B774;
+  padding: 1.5rem 1.5rem;
+  border-radius: 3.1rem;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #2D2D2D;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.header__menuButton {
+  display: none;
+}
+
+.header__menu {
+  margin-left: 26.7rem;
+}
+
+.header__button {
+  margin-left: auto;
+}
+
+.menu {
+  width: 365px;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__listItem_active::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 21px;
+  padding-top: 2px;
+  border-bottom: 2px solid #FF8345;
+}
+
+.menu__link {
+  color: #4A4A4A;
+}
+
+.main {
+  position: relative;
+  display: block;
+  margin-top: 121px;
+}
+
+.main__searchForm {
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.main__subscription {
+  margin-top: 40px;
+}
+
+.promo {
+  display: block;
+}
+
+.promo__paragraph {
+  font: 500 normal 1.5rem "Poppins", sans-serif;
+  color: #7C7C7C;
+  margin-top: 6px;
+  width: 444px;
+  line-height: 2.6rem;
+}
+
+.promo__button {
+  margin-top: 31px;
+}
+
+.searchForm {
+  font: 400 normal 1.6rem "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  max-width: 597px;
+  height: 62px;
+  background-color: #ffffff;
+  color: #A1A1A1;
+  border-radius: 31px;
+  padding: 0 3px 0 42px;
+}
+.searchForm__inputField {
+  flex-grow: 1;
+}
+.searchForm__button {
+  width: 55px;
+  height: 55px;
+}
+
+.subscription {
+  display: flex;
+  align-items: center;
+  color: #7C7C7C;
+  font: 400 normal 1.6rem "Roboto", sans-serif;
+}
+
+.subscription__users {
+  display: flex;
+}
+
+.subscription__listItem:nth-child(1) {
+  position: relative;
+  z-index: 0;
+}
+
+.subscription__listItem:nth-child(2) {
+  position: absolute;
+  left: 20px;
+  z-index: -1;
+}
+
+.subscription__listItem:nth-child(3) {
+  position: absolute;
+  left: 40px;
+  z-index: -2;
+}
+
+.subscription__listItem:nth-child(4) {
+  position: absolute;
+  left: 60px;
+  z-index: -3;
+}
+
+.subscription__paragraph {
+  margin-left: 75px;
+}
+
+.subscription__priceLink {
+  margin-left: 5px;
+}
+
+.solarSystem {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.solarSystem__trajectory {
+  position: absolute;
+  top: -34px;
+  right: -11px;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  border: 2px solid #E8E8E8;
+  z-index: -5;
+}
+
+.solarSystem__greenCircle {
+  position: absolute;
+  top: 83px;
+  right: 69px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background-color: #48B774;
+  z-index: -3;
+}
+
+.solarSystem__planet {
+  position: absolute;
+  top: 130px;
+  right: 150px;
+  z-index: -4;
+}
+
+.woman {
+  position: absolute;
+  top: 10px;
+  right: -200px;
+  z-index: -2;
 }
 
 /*# sourceMappingURL=style.css.map */
