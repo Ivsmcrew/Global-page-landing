@@ -1,61 +1,155 @@
-.solarSystem{
-    position: absolute;
-    top: 0;
-    right: 0;
+.solarPositionWrapper{
+    @media screen and (max-width: 1130px) {
+        display: none;
+    }
 }
 
-.solarSystem__trajectory{
-    position: absolute;
-    top: -34px;
-    right: -11px;
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-    border: 2px solid #E8E8E8;
-    z-index:-5;
+.solarSystem{
+    width:100%;
+    height: 100%;
+    position: relative;
 }
 
 .solarSystem__greenCircle{
     position: absolute;
-    top: 83px;
-    right: 69px;
+    z-index: -2;
+    top: 120px;
+    left: 85px;
     width: 280px;
     height: 280px;
     border-radius: 50%;
     background-color: $main-color-first;
-    z-index:-3;
 }
 
-.solarSystem__planet{
+
+.solarSystem__trajectory{
     position: absolute;
-    top: 130px;
-    right: 150px;
-    z-index:-4;
+    z-index: -4;
+    top: 0;
+    left: 0;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border: 2px solid #E8E8E8;
+}
+
+.solarSystem__planetPositionWrapper{
+    position: absolute;
+    z-index: -3;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 50%;
+
+    &_onPosOne{
+        animation: onPosOne 3s forwards;
+        animation-delay: 0s;
+    }
+    &_onPosTwo{
+        animation: onPosTwo 3s forwards;
+        animation-delay: 0.4s;
+    }
+    &_onPosThree{
+        animation: onPosThree 3s forwards;
+        animation-delay: 0.8s;
+    }
+    &_onPosFour{
+        animation: onPosFour 3s forwards;
+        animation-delay: 1.2s;
+    }   
+    &_onPosFive{
+        animation: onPosFive 3s forwards;
+        animation-delay: 1.8s;
+    }
+    &_onPosSix{
+        animation: onPosSix 3s forwards;
+        animation-delay: 2.2s;
+    }
+}
+
+.solarSystem__flagWrapper{
+    margin: -50px auto 0 auto;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .woman{
     position: absolute;
-    top: 10px;
-    right: -200px;
-    z-index:-2;
+    bottom: -155px;
+    right: 90px;
+    height: 557px;
+    z-index: -1;
 }
 
 
+//animations
+@keyframes onPosOne{
+    from {
+        transform: rotate(0deg);
+        padding-top: 50%;
+    }
 
-// .box{
-//     position: relative;
-// }
+    to {
+        transform: rotate(0deg);
+        padding-top: 0%;
+    }
+}
+@keyframes onPosTwo{
+    from {
+        transform: rotate(0deg);
+        padding-top: 50%;
+    }
 
-// .sputnik{
-//     position: absolute;
-//     left: 0;
-//     top: 0;
-//     offset-path: path('....');
-//     animation: moveBaby 10s linear infinite;
-// }
+    to {
+        transform: rotate(60deg);
+        padding-top: 0%;
+    }
+}
+@keyframes onPosThree{
+    from {
+        transform: rotate(0deg);
+        padding-top: 50%;
+    }
 
-// @keyframes moveBaby {
-//     100% {
-//         offset-distance: 100%;
-//     }
-// }
+    to {
+        transform: rotate(120deg);
+        padding-top: 0%;
+    }
+}
+@keyframes onPosFour{
+    from {
+        transform: rotate(0deg);
+        padding-top: 50%;
+    }
+
+    to {
+        transform: rotate(180deg);
+        padding-top: 0%;
+    }
+}
+@keyframes onPosFive{
+    from {
+        transform: rotate(0deg);
+        padding-top: 50%;
+    }
+
+    to {
+        transform: rotate(240deg);
+        padding-top: 0%;
+    }
+}
+@keyframes onPosSix{
+    from {
+        transform: rotate(0deg);
+        padding-top: 50%;
+    }
+
+    to {
+        transform: rotate(300deg);
+        padding-top: 0%;
+    }
+}

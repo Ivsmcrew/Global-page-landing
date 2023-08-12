@@ -9,28 +9,32 @@
 }
 
 .subscription__listItem:nth-child(1) {
-    position: relative;
     z-index: 0;
 }
 .subscription__listItem:nth-child(2) {
-    position: absolute;
-    left:20px;
     z-index: -1;
+    margin-left: -18px;
 }
 .subscription__listItem:nth-child(3) {
-    position: absolute;
-    left:40px;
     z-index: -2;
+    margin-left: -18px;
 }
 .subscription__listItem:nth-child(4) {
-    position: absolute;
-    left:60px;
     z-index: -3;
+    margin-left: -18px;
 }
 
 .subscription__paragraph{
-    margin-left: 75px;
+    margin-left: 10px;
+
+    @media screen and (max-width: 400px) {
+        margin-left: 5px;
+        font-size: 1.4rem;
+    }
 }
 .subscription__priceLink{
     margin-left: 5px;
+    @media screen and (max-width: 400px) {
+        font-size: 1.4rem;
+    }
 }

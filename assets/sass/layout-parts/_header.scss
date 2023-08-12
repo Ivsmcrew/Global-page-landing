@@ -2,16 +2,34 @@
     display: flex;
     align-items: center;
     padding-top: 3rem;
+    
+    @media screen and (max-width:1220px) {
+        justify-content: space-between;
+    }
 }
 
 .header__menuButton{
     display: none;
+
+    @media screen and (max-width:1130px) {
+        display: block;
+        margin-left: auto;
+        transform: rotate(180deg);
+    }
 }
 
 .header__menu{
     margin-left: 26.7rem;
+
+    @media screen and (max-width:1220px) {
+        margin-left: auto;
+    }
+    @media screen and (max-width:1130px) {
+        display: none;
+    }
 }
 
 .header__button{
     margin-left: auto;
 }
+

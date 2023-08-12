@@ -2,12 +2,20 @@
     @include fontRobotoRegular(1.6rem);
     display: flex;
     align-items: center;
+    min-width: 480px;
     max-width: 597px;
     height: 62px;
     background-color: #ffffff;
     color: $add-text-color;
     border-radius: 31px;
     padding: 0 3px 0 42px;
+
+    @media screen and (max-width:1130px) {
+        align-self: center;
+    }
+    @media screen and (max-width: 640px) {
+        min-width: 80%;
+    }
 
     &__inputField{
         flex-grow: 1;
@@ -16,4 +24,5 @@
         width: 55px;
         height: 55px;
     }
+
 }
