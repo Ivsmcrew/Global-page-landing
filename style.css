@@ -546,29 +546,101 @@ h2 {
   width: 100%;
   padding-top: 50%;
 }
-.solarSystem__planetPositionWrapper_onPosOne {
-  animation: onPosOne 3s forwards;
-  animation-delay: 0s;
+.solarSystem__planetPositionWrapper_posOne {
+  animation-name: posOne, rotateOne;
+  animation-delay: 0s, 5s;
+  animation-duration: 3s, 60s;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, none;
+  animation-timing-function: ease, linear;
 }
-.solarSystem__planetPositionWrapper_onPosTwo {
-  animation: onPosTwo 3s forwards;
-  animation-delay: 0.4s;
+.solarSystem__planetPositionWrapper_posOne > .solarSystem__flagWrapper {
+  animation-name: planetOne, selfBalanceOne;
+  animation-delay: 0s, 5s;
+  animation-duration: 3s, 60s;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, none;
+  animation-timing-function: ease, linear;
 }
-.solarSystem__planetPositionWrapper_onPosThree {
-  animation: onPosThree 3s forwards;
-  animation-delay: 0.8s;
+.solarSystem__planetPositionWrapper_posTwo {
+  animation-name: posTwo, rotateTwo;
+  animation-delay: 0.4s, 5s;
+  animation-duration: 3s, 60s;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, none;
+  animation-timing-function: ease, linear;
 }
-.solarSystem__planetPositionWrapper_onPosFour {
-  animation: onPosFour 3s forwards;
-  animation-delay: 1.2s;
+.solarSystem__planetPositionWrapper_posTwo > .solarSystem__flagWrapper {
+  animation-name: planetTwo, selfBalanceTwo;
+  animation-delay: 0.4s, 5s;
+  animation-duration: 3s, 60s;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, none;
+  animation-timing-function: ease, linear;
 }
-.solarSystem__planetPositionWrapper_onPosFive {
-  animation: onPosFive 3s forwards;
-  animation-delay: 1.8s;
+.solarSystem__planetPositionWrapper_posThree {
+  animation-name: posThree, rotateThree;
+  animation-delay: 0.8s, 5s;
+  animation-duration: 3s, 60s;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, none;
+  animation-timing-function: ease, linear;
 }
-.solarSystem__planetPositionWrapper_onPosSix {
-  animation: onPosSix 3s forwards;
-  animation-delay: 2.2s;
+.solarSystem__planetPositionWrapper_posThree > .solarSystem__flagWrapper {
+  animation-name: planetThree, selfBalanceThree;
+  animation-delay: 0.8s, 5s;
+  animation-duration: 3s, 60s;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, none;
+  animation-timing-function: ease, linear;
+}
+.solarSystem__planetPositionWrapper_posFour {
+  animation-name: posFour, rotateFour;
+  animation-delay: 1.2s, 5s;
+  animation-duration: 3s, 60s;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, none;
+  animation-timing-function: ease, linear;
+}
+.solarSystem__planetPositionWrapper_posFour > .solarSystem__flagWrapper {
+  animation-name: planetFour, selfBalanceFour;
+  animation-delay: 1.2s, 5s;
+  animation-duration: 3s, 60s;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, none;
+  animation-timing-function: ease, linear;
+}
+.solarSystem__planetPositionWrapper_posFive {
+  animation-name: posFive, rotateFive;
+  animation-delay: 1.6s, 5s;
+  animation-duration: 3s, 60s;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, none;
+  animation-timing-function: ease, linear;
+}
+.solarSystem__planetPositionWrapper_posFive > .solarSystem__flagWrapper {
+  animation-name: planetFive, selfBalanceFive;
+  animation-delay: 1.6s, 5s;
+  animation-duration: 3s, 60s;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, none;
+  animation-timing-function: ease, linear;
+}
+.solarSystem__planetPositionWrapper_posSix {
+  animation-name: posSix, rotateSix;
+  animation-delay: 2s, 5s;
+  animation-duration: 3s, 60s;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, none;
+  animation-timing-function: ease, linear;
+}
+.solarSystem__planetPositionWrapper_posSix > .solarSystem__flagWrapper {
+  animation-name: planetSix, selfBalanceSix;
+  animation-delay: 2s, 5s;
+  animation-duration: 3s, 60s;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, none;
+  animation-timing-function: ease, linear;
 }
 
 .solarSystem__flagWrapper {
@@ -588,7 +660,7 @@ h2 {
   z-index: -1;
 }
 
-@keyframes onPosOne {
+@keyframes posOne {
   from {
     transform: rotate(0deg);
     padding-top: 50%;
@@ -598,7 +670,7 @@ h2 {
     padding-top: 0%;
   }
 }
-@keyframes onPosTwo {
+@keyframes posTwo {
   from {
     transform: rotate(0deg);
     padding-top: 50%;
@@ -608,7 +680,7 @@ h2 {
     padding-top: 0%;
   }
 }
-@keyframes onPosThree {
+@keyframes posThree {
   from {
     transform: rotate(0deg);
     padding-top: 50%;
@@ -618,7 +690,7 @@ h2 {
     padding-top: 0%;
   }
 }
-@keyframes onPosFour {
+@keyframes posFour {
   from {
     transform: rotate(0deg);
     padding-top: 50%;
@@ -628,7 +700,7 @@ h2 {
     padding-top: 0%;
   }
 }
-@keyframes onPosFive {
+@keyframes posFive {
   from {
     transform: rotate(0deg);
     padding-top: 50%;
@@ -638,7 +710,7 @@ h2 {
     padding-top: 0%;
   }
 }
-@keyframes onPosSix {
+@keyframes posSix {
   from {
     transform: rotate(0deg);
     padding-top: 50%;
@@ -646,6 +718,150 @@ h2 {
   to {
     transform: rotate(300deg);
     padding-top: 0%;
+  }
+}
+@keyframes planetOne {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes planetTwo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-60deg);
+  }
+}
+@keyframes planetThree {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-120deg);
+  }
+}
+@keyframes planetFour {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
+}
+@keyframes planetFive {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-240deg);
+  }
+}
+@keyframes planetSix {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-300deg);
+  }
+}
+@keyframes rotateOne {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateTwo {
+  from {
+    transform: rotate(60deg);
+  }
+  to {
+    transform: rotate(420deg);
+  }
+}
+@keyframes rotateThree {
+  from {
+    transform: rotate(120deg);
+  }
+  to {
+    transform: rotate(480deg);
+  }
+}
+@keyframes rotateFour {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(540deg);
+  }
+}
+@keyframes rotateFive {
+  from {
+    transform: rotate(240deg);
+  }
+  to {
+    transform: rotate(600deg);
+  }
+}
+@keyframes rotateSix {
+  from {
+    transform: rotate(300deg);
+  }
+  to {
+    transform: rotate(660deg);
+  }
+}
+@keyframes selfBalanceOne {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes selfBalanceTwo {
+  from {
+    transform: rotate(-60deg);
+  }
+  to {
+    transform: rotate(-420deg);
+  }
+}
+@keyframes selfBalanceThree {
+  from {
+    transform: rotate(-120deg);
+  }
+  to {
+    transform: rotate(-480deg);
+  }
+}
+@keyframes selfBalanceFour {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(-540deg);
+  }
+}
+@keyframes selfBalanceFive {
+  from {
+    transform: rotate(-240deg);
+  }
+  to {
+    transform: rotate(-600deg);
+  }
+}
+@keyframes selfBalanceSix {
+  from {
+    transform: rotate(-300deg);
+  }
+  to {
+    transform: rotate(-660deg);
   }
 }
 
