@@ -59,6 +59,13 @@ input::-ms-clear {
   display: none;
 }
 
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+
 button, input[type=submit] {
   display: inline-block;
   box-shadow: none;
@@ -124,6 +131,20 @@ body {
   margin: 0 auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+.backLayer {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.backLayer_active {
+  display: block;
 }
 
 .wrapper {
@@ -213,9 +234,15 @@ h2 {
     justify-content: space-between;
   }
 }
+@media screen and (max-width: 1130px) {
+  .header {
+    position: relative;
+  }
+}
 
 .header__menuButton {
   display: none;
+  z-index: 3;
 }
 @media screen and (max-width: 1130px) {
   .header__menuButton {
@@ -235,7 +262,20 @@ h2 {
 }
 @media screen and (max-width: 1130px) {
   .header__menu {
-    display: none;
+    position: absolute;
+    z-index: 3;
+    top: -300px;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    opacity: 0;
+    transition-property: top, opacity;
+    transition-duration: 1s;
+  }
+  .header__menu_opened {
+    top: 45px;
+    opacity: 1;
+    transition-property: top, opacity;
+    transition-duration: 1s;
   }
 }
 
@@ -246,10 +286,22 @@ h2 {
 .menu {
   width: 365px;
 }
+@media screen and (max-width: 1130px) {
+  .menu {
+    max-width: none;
+    width: 75%;
+  }
+}
 
 .menu__list {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 1130px) {
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .menu__listItem_active::after {
@@ -260,9 +312,29 @@ h2 {
   padding-top: 2px;
   border-bottom: 2px solid #FF8345;
 }
+@media screen and (max-width: 1130px) {
+  .menu__listItem_active::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .menu__listItem_active {
+    filter: contrast(130%);
+  }
+}
+@media screen and (max-width: 1130px) {
+  .menu__listItem {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 0;
+    background-color: antiquewhite;
+  }
+}
 
 .menu__link {
   color: #4A4A4A;
+  display: block;
 }
 
 .main {
