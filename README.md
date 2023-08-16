@@ -1,6 +1,6 @@
 ## Global
 
-"Global" is a adaptive single-page. Implemented such things as adaptivity, hiding menu, simple validation of a search form, two-step-animation
+"Global" is an adaptive single-page. Implemented such things as adaptivity, hiding menu, simple validation of a search form, two-step-animation
 
 It gave me experience at the following points: 
 - BEM layout
